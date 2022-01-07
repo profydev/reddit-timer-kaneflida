@@ -1,7 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import styles from './App.module.css';
 import MarketingPage from './Pages/MarketingPage';
+import SearchPage from './Pages/SearchPage';
+import styles from './App.module.css';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       App Placeholder
       <Routes>
         <Route path="/" element={<MarketingPage />} />
-        <Route path="/search" element={<MarketingPage />} />
+        <Route path="/search" element={<SearchPage />} />
       </Routes>
     </div>
   );
